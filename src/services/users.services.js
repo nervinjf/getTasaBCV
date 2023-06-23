@@ -16,7 +16,7 @@ class UserServices {
         const dolar = $('#dolar .centrado strong').text();
             console.log('El valor diario es:',dolar );
             const dolarf = parseFloat(dolar)
-            const dolarfinish = {value: dolar};
+            const dolarfinish = {value: dolarf};
 
             return dolarfinish;
 
