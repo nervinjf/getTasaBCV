@@ -17,7 +17,7 @@ class UserServices {
             console.log('El valor diario es:',dolar );
             const dolarp = dolar.replace(",", ".")
             const dolarf = Number(dolarp)
-            const dolarfinish = {value: dolarf};
+            const dolarfinish = {value: dolarf, name: dolar};
 
             return dolarfinish;
 
