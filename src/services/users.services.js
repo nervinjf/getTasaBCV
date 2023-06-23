@@ -16,7 +16,7 @@ class UserServices {
         const dolar = $('#dolar .centrado strong').text();
             console.log('El valor diario es:',dolar );
 
-            const dolarfinish = {value: dolar};
+            const dolarfinish = {value: Number(dolar)};
 
             return dolarfinish;
 
