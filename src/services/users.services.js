@@ -15,7 +15,9 @@ class UserServices {
     // Extraer el valor del elemento con el id "dolar"
         const dolar = $('#dolar .centrado strong').text();
             console.log('El valor diario es:',dolar );
-            const dolarfinish = {value: dolar};
+            const dolarp = dolar.replace(",", ".")
+            const dolarf = Number(dolarp)
+            const dolarfinish = {value: dolarf};
 
             return dolarfinish;
 
