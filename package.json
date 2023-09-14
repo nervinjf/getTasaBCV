@@ -4,8 +4,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon ./src/server.js",
-    "rebuild": "npm rebuild",
-    "start": "node ./src/server.js",
+    "build": "./node_modules/.bin/netlify-lambda build src/server.js",
+    "start": "./node_modules/.bin/netlify-lambda serve src",
     "seed": "node ./src/seeders/seed.js",
     "tettt": "npm install node-pre-gyp --fallback-to-build",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -23,12 +23,14 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose-morgan": "^1.0.17",
     "mysql2": "^2.3.3",
+    "netlify-lambda": "^2.0.16",
     "nodemailer": "^6.8.0",
     "nodemon": "^2.0.20",
     "pg": "^8.8.0",
     "pg-hstore": "^2.3.4",
     "save": "^2.9.0",
-    "sequelize": "^6.25.5"
+    "sequelize": "^6.25.5",
+    "serverless-http": "^3.2.0"
   },
   "devDependencies": {
     "morgan": "^1.10.0",
